@@ -7,6 +7,10 @@ Screenshots
 -----------
 ![image](http://www.codepool.biz/wp-content/uploads/2014/11/nodejs_dwt.png)
 
+Blog
+-----
+[Scan and Upload Documents in Web TWAIN and Go][3]
+
 Download & Installation
 -----------------------
 * [Dynamic Web TWAIN][1]
@@ -19,4 +23,4 @@ How to Run
 
 [1]:https://www.dynamsoft.com/Secure/Register_ClientInfo.aspx?productName=WebTWAIN&from=FromDownload
 [2]:https://golang.org/dl/
-
+[3]:http://www.codepool.biz/twain/scan-and-upload-documents-in-web-twain-and-go.html
