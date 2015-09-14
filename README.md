@@ -13,13 +13,15 @@ Blog
 
 Download & Installation
 -----------------------
-* [Dynamic Web TWAIN v10.0.1][1]
+* [Dynamic Web TWAIN][1]
 * [Go][2]
 
 How to Run
 -----------
-1. `go run server.go`
-2. visit `localhost:2014`
+1. download and instal Dynamic Web TWAIN
+2. copy the Resource folder from the installation directory (like C:\Program Files (x86)\Dynamsoft\Dynamic Web TWAIN SDK 11.1 Trial)
+3. `go run server.go`
+4. visit `localhost:2014`
 
 [1]:http://www.dynamsoft.com/download/Dynamic%20Web%20TWAIN%2010.0.1%20TRIAL.exe
 [2]:https://golang.org/dl/
