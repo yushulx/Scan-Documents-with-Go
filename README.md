@@ -13,7 +13,7 @@ Blog
 
 Download & Installation
 -----------------------
-* [Dynamic Web TWAIN][1]
+* [Dynamic Web TWAIN 11.1][1]
 * [Go][2]
 
 How to Run
@@ -23,6 +23,6 @@ How to Run
 3. `go run server.go`
 4. visit `localhost:2014`
 
-[1]:http://www.dynamsoft.com/download/Dynamic%20Web%20TWAIN%2010.0.1%20TRIAL.exe
+[1]:http://www.dynamsoft.com/CustomerPortal/LoginOrRegister.aspx?status=signup&op=4DD608F3803493E4&product=CB4BDC4FF903450C
 [2]:https://golang.org/dl/
 [3]:http://www.codepool.biz/twain/scan-and-upload-documents-in-web-twain-and-go.html
