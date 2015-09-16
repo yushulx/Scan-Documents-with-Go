@@ -21,7 +21,7 @@ How to Run
 1. Download and install Dynamic Web TWAIN.
 2. Copy the **Resource** folder from **< Dynamic Web TWAIN Installation Directory >** to your project.
 3. Run `go run server.go`
-4. visit `localhost:2014`
+4. Visit `localhost:2014`
 
 [1]:http://www.dynamsoft.com/Downloads/WebTWAIN_Download.aspx
 [2]:https://golang.org/dl/
