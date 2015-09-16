@@ -18,11 +18,11 @@ Download & Installation
 
 How to Run
 -----------
-1. download and instal Dynamic Web TWAIN
-2. copy the Resource folder from the installation directory (like C:\Program Files (x86)\Dynamsoft\Dynamic Web TWAIN SDK 11.1 Trial)
-3. `go run server.go`
+1. Download and install Dynamic Web TWAIN.
+2. Copy the **Resource** folder from **< Dynamic Web TWAIN Installation Directory >** to your project.
+3. Run `go run server.go`
 4. visit `localhost:2014`
 
-[1]:http://www.dynamsoft.com/CustomerPortal/LoginOrRegister.aspx?status=signup&op=4DD608F3803493E4&product=CB4BDC4FF903450C
+[1]:http://www.dynamsoft.com/Downloads/WebTWAIN_Download.aspx
 [2]:https://golang.org/dl/
 [3]:http://www.codepool.biz/twain/scan-and-upload-documents-in-web-twain-and-go.html
