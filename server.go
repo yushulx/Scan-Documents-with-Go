@@ -23,7 +23,7 @@ func uploadHandler(w http.ResponseWriter, r *http.Request) {
 			 fmt.Fprintln(w, err)
 			 return
 	 	 } 
-		 out, err := os.Create(files[i].Filename)
+		 out, err := os.Create("UploadedImages/" + files[i].Filename)
 		 defer out.Close()
 			 if err != nil {
 			 	fmt.Fprintf(w, "create file err!")
