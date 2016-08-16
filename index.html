@@ -1,43 +1,48 @@
 <html>
-    <head>
-        <title>Document Imaging & Uploading</title>
-           <script type="text/javascript" src="Resources/dynamsoft.webtwain.initiate.js"> </script>
-			<script type="text/javascript" src="Resources/dynamsoft.webtwain.config.js"> </script>
-    </head>
-    <body>
+<head>
+    <title>Document Imaging & Uploading</title>
+    <script type="text/javascript" src="Resources/dynamsoft.webtwain.initiate.js"> </script>
+    <script type="text/javascript" src="Resources/dynamsoft.webtwain.config.js"> </script>
+</head>
+<body>
+    <input type="button" value="Acquire" onclick="AcquireImage();" />
+    <input type="button" value="Upload Image" onclick="btnUpload_onclick()">
+    <div id="dwtcontrolContainer"></div>
+    <!--Custom script goes here-->
+    <script type="text/javascript">
+        Dynamsoft.WebTwainEnv.RegisterEvent('OnWebTwainReady', Dynamsoft_OnReady); // Register OnWebTwainReady event. This event fires as soon as Dynamic Web TWAIN is initialized and ready to be used
 
-        <input type="button" value="Acquire" onclick="AcquireImage();" />
-        <input id="btnUpload" type="button" value="Upload Image" onclick="btnUpload_onclick()">
-		        <div id="dwtcontrolContainer"></div>
-        <!--Custom script goes here-->
-        <script type="text/javascript">
-            function AcquireImage(){
-			var DWObject = Dynamsoft.WebTwainEnv.GetWebTwain('dwtcontrolContainer'); // Get the Dynamic Web TWAIN object that is embeded in the div with id 'dwtcontrolContainer'
+        var DWObject;
+
+        function Dynamsoft_OnReady() {
+            DWObject = Dynamsoft.WebTwainEnv.GetWebTwain('dwtcontrolContainer'); // Get the Dynamic Web TWAIN object that is embeded in the div with id 'dwtcontrolContainer'
+        }
+        function AcquireImage() {
             DWObject.IfShowUI = false;
             DWObject.SelectSource();
             DWObject.OpenSource();
             DWObject.AcquireImage();
-            }
-            function btnUpload_onclick() {
-                DWObject.HTTPPort = 2014;
-                var CurrentPathName = unescape(location.pathname); // get current PathName in plain ASCII
-                var CurrentPath = CurrentPathName.substring(0, CurrentPathName.lastIndexOf("/") + 1);
-                var strActionPage = CurrentPath + "upload";
-                var strHostIP = "localhost"; // server IP e.g. 192.168.8.84
-                var sFun = function(){
-                    alert('successful');
-                }, fFun = function(){
-                    alert('failed');
-                };
-                DWObject.HTTPUploadThroughPostEx(
+        }
+        function btnUpload_onclick() {
+            DWObject.HTTPPort = 2014;
+            var CurrentPathName = unescape(location.pathname); // get current PathName in plain ASCII
+            var CurrentPath = CurrentPathName.substring(0, CurrentPathName.lastIndexOf("/") + 1);
+            var strActionPage = CurrentPath + "upload";
+            var strHostIP = "localhost"; // server IP e.g. 192.168.8.84
+            var sFun = function () {
+                alert('successful');
+            }, fFun = function () {
+                alert('failed');
+            };
+            DWObject.HTTPUploadThroughPostEx(
                 strHostIP,
                 DWObject.CurrentImageIndexInBuffer,
                 strActionPage,
                 "test.jpg",
                 1,// JPEG
-            sFun, fFun
+                sFun, fFun
             );
-            }
-        </script>
-    </body>
+        }
+    </script>
+</body>
 </html>
