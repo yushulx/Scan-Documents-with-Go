@@ -9,20 +9,23 @@ Screenshots
 
 Blog
 -----
-[Scan and Upload Documents in Web TWAIN and Go][3]
+[Scan and Upload Documents in Web TWAIN and Go][2]
 
 Download & Installation
 -----------------------
-* [Dynamic Web TWAIN 11.1][1]
-* [Go][2]
+* [Go][1]
 
 How to Run
 -----------
-1. Download and install Dynamic Web TWAIN.
-2. Copy the **Resource** folder from **< Dynamic Web TWAIN Installation Directory >** to your project.
-3. Run `go run server.go`
-4. Visit `localhost:2014`
+1. Run `go run server.go`
+2. Visit `localhost:2014`
+3. Install Dynamic Web TWAIN as instructed on the page
+4. Test the sample
 
-[1]:http://www.dynamsoft.com/Downloads/WebTWAIN_Download.aspx
-[2]:https://golang.org/dl/
-[3]:http://www.codepool.biz/twain/scan-and-upload-documents-in-web-twain-and-go.html
+[1]:https://golang.org/dl/
+[2]:http://www.codepool.biz/twain/scan-and-upload-documents-in-web-twain-and-go.html
+
+
+
+
+
