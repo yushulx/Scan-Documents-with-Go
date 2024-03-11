@@ -1,29 +1,29 @@
-Document Web Scanning & Uploading with Dynamic Web TWAIN & Go
-=======================================================================
+# Web Document Scanning and Uploading with Dynamic Web TWAIN & Go
+This sample demonstrates how to implement a simple web document scanning and uploading application using [Dynamic Web TWAIN](https://www.dynamsoft.com/web-twain/overview/?utm_content=nav-products) and Go.
 
-The sample shows how to create a Web application for document imaging and uploading with Dynamic Web TWAIN & Go.
+## Prerequisites
+- [Go](https://go.dev/dl/)
+- [Dynamic Web TWAIN License Key](https://www.dynamsoft.com/customer/license/trialLicense?product=dwt)
 
-Screenshots
------------
-![image](http://www.codepool.biz/wp-content/uploads/2014/11/nodejs_dwt.png)
+## How to Run
+1. Replace `LICENSE-KEY` in `index.html` with your own license key.
+    ```html
+    Dynamsoft.DWT.ProductKey = 'LICENSE-KEY';
+	```
+2. Run the server:
 
-Blog
------
-[Scan and Upload Documents in Web TWAIN and Go][2]
+	```bash
+	go run server.go
+	```
 
-Download & Installation
------------------------
-* [Go][1]
+3. Open `localhost:2024` in your browser.
 
-How to Run
------------
-1. Run `go run server.go`
-2. Visit `localhost:2014`
-3. Install Dynamic Web TWAIN as instructed on the page
-4. Test the sample
+    ![upload document images to a Go web server](https://www.dynamsoft.com/codepool/img/2024/03/dynamic-web-twain-nodejs-document-scan.png)
 
-[1]:https://golang.org/dl/
-[2]:http://www.codepool.biz/twain/scan-and-upload-documents-in-web-twain-and-go.html
+## Blog
+[How to Scan and Upload Documents with Web TWAIN and Go](https://www.dynamsoft.com/codepool/scan-and-upload-documents-in-web-twain-and-go.html)
+
+
 
 
 
